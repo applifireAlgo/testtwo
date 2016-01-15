@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test.app.server.service.UserAccessLevelTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-01-14T09:54:40" hostname="51e279dc94c3" time="0.068">
+  <properties/>
+  <testcase name="test1Save" classname="test.app.server.service.UserAccessLevelTestCase" time="0.041"/>
+  <testcase name="test2Update" classname="test.app.server.service.UserAccessLevelTestCase" time="0.014"/>
+  <testcase name="test3FindById" classname="test.app.server.service.UserAccessLevelTestCase" time="0.004"/>
+  <testcase name="test4Delete" classname="test.app.server.service.UserAccessLevelTestCase" time="0.008"/>
+  <system-out><![CDATA[Setting logged in user info for ADD
+[EL Fine]: sql: 2016-01-14 09:54:40.28--ClientSession(1664839283)--Connection(488201796)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_UserAccessLevel_M (userAccessLevelId, levelDescription, levelHelp, levelIcon, levelName, userAccessLevel, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [E6BB502B-F495-4E97-8830-ABD101D7F086, upmtyJ5PKTqkiZX3wADBEKLhKR1rqqyomcVFsGJfaKDcv4Cfqh, Mu9K0ezIKoHHCgF9ikMT69dfdQtVNkEmMja0h5ffszmB9K8uWY, 7xVUMg31HDoKqG1IOFoYHjgx5itKaKEPxwHhPHe9rFsWfj0WQw, FnfAuDTnChmNMNDqz2KP07XSzG3x5IEJUIDnQx1iRkOJR0UHVz, 87069, 1, AAAAA, 2016-01-14 09:54:40.252, null, 2016-01-14 09:54:40.252, 1, null]
+[EL Fine]: sql: 2016-01-14 09:54:40.289--ClientSession(1744115733)--Connection(488201796)--Thread(Thread[Test worker,5,main])--SELECT userAccessLevelId, levelDescription, levelHelp, levelIcon, levelName, userAccessLevel, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessLevel_M WHERE ((activeStatus = ?) AND (userAccessLevelId = ?))
+	bind => [1, E6BB502B-F495-4E97-8830-ABD101D7F086]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-01-14 09:54:40.292--ClientSession(1703084605)--Connection(488201796)--Thread(Thread[Test worker,5,main])--SELECT userAccessLevelId, levelDescription, levelHelp, levelIcon, levelName, userAccessLevel, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessLevel_M WHERE (userAccessLevelId = ?)
+	bind => [E6BB502B-F495-4E97-8830-ABD101D7F086]
+[EL Fine]: sql: 2016-01-14 09:54:40.294--ClientSession(1703084605)--Connection(488201796)--Thread(Thread[Test worker,5,main])--UPDATE ast_UserAccessLevel_M SET levelDescription = ?, levelHelp = ?, levelIcon = ?, levelName = ?, userAccessLevel = ?, updatedBy = ?, versionId = ? WHERE ((userAccessLevelId = ?) AND (versionId = ?))
+	bind => [JkwrQDKJIsdERrgoGUNp6qAXOsfgHtQh2FfNVkuIZOhlA9XD3P, R6gjp8FwTIuHypImPl2roPdfde243vh3lXccPOPJbD5iHfRSNH, YVdSv5SHH069zKM1rCGqmFHcCvlV2RKFodBRwkTKLVyWkzXilc, Vqr46r3idexTN95mVZpuhyjscSHEW29vjqoEYU9eRKqID3XE31, 98309, AAAAA, 2, E6BB502B-F495-4E97-8830-ABD101D7F086, 1]
+[EL Fine]: sql: 2016-01-14 09:54:40.302--ClientSession(250650276)--Connection(488201796)--Thread(Thread[Test worker,5,main])--SELECT userAccessLevelId, levelDescription, levelHelp, levelIcon, levelName, userAccessLevel, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessLevel_M WHERE ((activeStatus = ?) AND (userAccessLevelId = ?))
+	bind => [1, E6BB502B-F495-4E97-8830-ABD101D7F086]
+[EL Fine]: sql: 2016-01-14 09:54:40.306--ClientSession(750545421)--Connection(488201796)--Thread(Thread[Test worker,5,main])--SELECT userAccessLevelId, levelDescription, levelHelp, levelIcon, levelName, userAccessLevel, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessLevel_M WHERE (userAccessLevelId = ?)
+	bind => [E6BB502B-F495-4E97-8830-ABD101D7F086]
+[EL Fine]: sql: 2016-01-14 09:54:40.307--ClientSession(750545421)--Connection(488201796)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_UserAccessLevel_M WHERE ((userAccessLevelId = ?) AND (versionId = ?))
+	bind => [E6BB502B-F495-4E97-8830-ABD101D7F086, 2]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

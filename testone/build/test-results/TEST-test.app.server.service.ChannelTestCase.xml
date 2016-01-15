@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test.app.server.service.ChannelTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-01-14T09:54:42" hostname="51e279dc94c3" time="0.063">
+  <properties/>
+  <testcase name="test1Save" classname="test.app.server.service.ChannelTestCase" time="0.037"/>
+  <testcase name="test2Update" classname="test.app.server.service.ChannelTestCase" time="0.011"/>
+  <testcase name="test3FindById" classname="test.app.server.service.ChannelTestCase" time="0.004"/>
+  <testcase name="test4Delete" classname="test.app.server.service.ChannelTestCase" time="0.01"/>
+  <system-out><![CDATA[Setting logged in user info for ADD
+[EL Fine]: sql: 2016-01-14 09:54:42.277--ClientSession(91551)--Connection(488201796)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Channel_M (channelId, channel, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [D108C241-9466-467D-8469-2212FA3CB011, iX6RdDQFxnMcgU8zV5fh0wrAEbOQrkYU0wRU0135gdIOQ8LQoc, 1, AAAAA, 2016-01-14 09:54:42.253, null, 2016-01-14 09:54:42.253, 1, null]
+[EL Fine]: sql: 2016-01-14 09:54:42.285--ClientSession(1667834191)--Connection(488201796)--Thread(Thread[Test worker,5,main])--SELECT channelId, channel, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Channel_M WHERE ((activeStatus = ?) AND (channelId = ?))
+	bind => [1, D108C241-9466-467D-8469-2212FA3CB011]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-01-14 09:54:42.287--ClientSession(1791050643)--Connection(488201796)--Thread(Thread[Test worker,5,main])--SELECT channelId, channel, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Channel_M WHERE (channelId = ?)
+	bind => [D108C241-9466-467D-8469-2212FA3CB011]
+[EL Fine]: sql: 2016-01-14 09:54:42.289--ClientSession(1791050643)--Connection(488201796)--Thread(Thread[Test worker,5,main])--UPDATE ast_Channel_M SET channel = ?, updatedBy = ?, versionId = ? WHERE ((channelId = ?) AND (versionId = ?))
+	bind => [KKbeP8dTsqXEg3GjR0kW8AVvsPR5sJDYBNJsx6YPLcljlJKjZe, AAAAA, 2, D108C241-9466-467D-8469-2212FA3CB011, 1]
+[EL Fine]: sql: 2016-01-14 09:54:42.295--ClientSession(1762693111)--Connection(488201796)--Thread(Thread[Test worker,5,main])--SELECT channelId, channel, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Channel_M WHERE ((activeStatus = ?) AND (channelId = ?))
+	bind => [1, D108C241-9466-467D-8469-2212FA3CB011]
+[EL Fine]: sql: 2016-01-14 09:54:42.3--ClientSession(154613135)--Connection(488201796)--Thread(Thread[Test worker,5,main])--SELECT channelId, channel, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Channel_M WHERE (channelId = ?)
+	bind => [D108C241-9466-467D-8469-2212FA3CB011]
+[EL Fine]: sql: 2016-01-14 09:54:42.301--ClientSession(154613135)--Connection(488201796)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Channel_M WHERE ((channelId = ?) AND (versionId = ?))
+	bind => [D108C241-9466-467D-8469-2212FA3CB011, 2]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

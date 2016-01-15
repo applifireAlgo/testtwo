@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test.app.server.service.BrandTestCase" tests="5" skipped="0" failures="0" errors="0" timestamp="2016-01-14T09:54:40" hostname="51e279dc94c3" time="0.142">
+  <properties/>
+  <testcase name="test1Save" classname="test.app.server.service.BrandTestCase" time="0.082"/>
+  <testcase name="test2Update" classname="test.app.server.service.BrandTestCase" time="0.017"/>
+  <testcase name="test3FindById" classname="test.app.server.service.BrandTestCase" time="0.007"/>
+  <testcase name="test3findBycategoryId" classname="test.app.server.service.BrandTestCase" time="0.007"/>
+  <testcase name="test4Delete" classname="test.app.server.service.BrandTestCase" time="0.028"/>
+  <system-out><![CDATA[[EL Fine]: sql: 2016-01-14 09:54:40.439--ClientSession(1055510281)--Connection(488201796)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Category_M (categoryId, category, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [D114091E-17DE-43C1-ADBC-23F8831C5001, ruMf6e9uOqX600KKZ9la86m0EsNWDKNB7Pfrgm3qwFnrqN0ueb, 1, AAAAA, 2016-01-14 09:54:40.416, null, 2016-01-14 09:54:40.416, 1, null]
+Setting logged in user info for ADD
+[EL Fine]: sql: 2016-01-14 09:54:40.482--ClientSession(98908157)--Connection(488201796)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Brand_M (brandcode, branddesc, categoryId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [4BD0A711-1328-40F4-B65D-0201748778C0, KCY9RtUTPQEfpx96IpzGp1TuI6WfKZczygtqvcVIvCbBCAYgxS, D114091E-17DE-43C1-ADBC-23F8831C5001, 1, AAAAA, 2016-01-14 09:54:40.442, null, 2016-01-14 09:54:40.442, 1, null]
+[EL Fine]: sql: 2016-01-14 09:54:40.493--ClientSession(881300242)--Connection(488201796)--Thread(Thread[Test worker,5,main])--SELECT brandcode, branddesc, categoryId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Brand_M WHERE ((activeStatus = ?) AND (brandcode = ?))
+	bind => [1, 4BD0A711-1328-40F4-B65D-0201748778C0]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-01-14 09:54:40.496--ClientSession(1938008957)--Connection(488201796)--Thread(Thread[Test worker,5,main])--SELECT brandcode, branddesc, categoryId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Brand_M WHERE (brandcode = ?)
+	bind => [4BD0A711-1328-40F4-B65D-0201748778C0]
+[EL Fine]: sql: 2016-01-14 09:54:40.498--ClientSession(1938008957)--Connection(488201796)--Thread(Thread[Test worker,5,main])--UPDATE ast_Brand_M SET branddesc = ?, updatedBy = ?, versionId = ? WHERE ((brandcode = ?) AND (versionId = ?))
+	bind => [auIHEvgbWThYtPHPTJrSphSdU1IgAmZ5yzGwW3kf5zAKfR1BQ5, AAAAA, 2, 4BD0A711-1328-40F4-B65D-0201748778C0, 1]
+[EL Fine]: sql: 2016-01-14 09:54:40.509--ClientSession(895436525)--Connection(488201796)--Thread(Thread[Test worker,5,main])--SELECT brandcode, branddesc, categoryId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Brand_M WHERE ((activeStatus = ?) AND (brandcode = ?))
+	bind => [1, 4BD0A711-1328-40F4-B65D-0201748778C0]
+[EL Fine]: sql: 2016-01-14 09:54:40.517--ClientSession(828682119)--Connection(488201796)--Thread(Thread[Test worker,5,main])--SELECT brandcode, branddesc, categoryId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Brand_M WHERE ((activeStatus = ?) AND (categoryId = ?))
+	bind => [1, D114091E-17DE-43C1-ADBC-23F8831C5001]
+[EL Fine]: sql: 2016-01-14 09:54:40.524--ClientSession(1786627967)--Connection(488201796)--Thread(Thread[Test worker,5,main])--SELECT brandcode, branddesc, categoryId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Brand_M WHERE (brandcode = ?)
+	bind => [4BD0A711-1328-40F4-B65D-0201748778C0]
+[EL Fine]: sql: 2016-01-14 09:54:40.525--ClientSession(1786627967)--Connection(488201796)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Brand_M WHERE ((brandcode = ?) AND (versionId = ?))
+	bind => [4BD0A711-1328-40F4-B65D-0201748778C0, 2]
+[EL Fine]: sql: 2016-01-14 09:54:40.541--ClientSession(1675058225)--Connection(488201796)--Thread(Thread[Test worker,5,main])--SELECT categoryId, category, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Category_M WHERE (categoryId = ?)
+	bind => [D114091E-17DE-43C1-ADBC-23F8831C5001]
+[EL Fine]: sql: 2016-01-14 09:54:40.543--ClientSession(1675058225)--Connection(488201796)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Category_M WHERE ((categoryId = ?) AND (versionId = ?))
+	bind => [D114091E-17DE-43C1-ADBC-23F8831C5001, 1]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

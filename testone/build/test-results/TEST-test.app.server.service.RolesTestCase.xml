@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test.app.server.service.RolesTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-01-14T09:54:42" hostname="51e279dc94c3" time="0.086">
+  <properties/>
+  <testcase name="test1Save" classname="test.app.server.service.RolesTestCase" time="0.047"/>
+  <testcase name="test2Update" classname="test.app.server.service.RolesTestCase" time="0.015"/>
+  <testcase name="test3FindById" classname="test.app.server.service.RolesTestCase" time="0.005"/>
+  <testcase name="test4Delete" classname="test.app.server.service.RolesTestCase" time="0.018"/>
+  <system-out><![CDATA[[EL Fine]: sql: 2016-01-14 09:54:42.188--ClientSession(87825361)--Connection(488201796)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_AppMenus_M (menuId, appId, appType, autoSave, menuAccessRights, menuAction, menuCommands, menuDisplay, menuHead, menuIcon, menuLabel, menuTreeId, RefObjectId, uiType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [1148FB12-1F48-4E71-8C06-643D1B12ACBB, Yq67x7a06YGiuyMCF1FKGdHjNwbvuVVNABA9BPl1lafZsQrRLX, 1, true, 5, 9V3GCRZgkXBSW0g1olAc1hENqaziuRgnC5YZdyTArbEua9QYcR, 4l3kHtEpvCzOmXLyMpqw28oJP41g2ufSrMT7SoEuf7AVRYDwmX, true, true, zJmsdZDHLu2PqpmO100Sow51p7Cod7xAAuJ6TIXuMEhKUIMwlb, lfTT81FmZxJVllza9ytD683YBXSfuFjxancClWoASZeXFJFdgI, JZjUiCAHJPkzAMFmKmRf4IRzBbMf2OD8YCkNZxDYzfkSQjaxcN, h0RMNxkeABKpEgVW3F4Q4XjFsTV0D9BBv9ngXQ4vy8r8r3F3Xf, TRh, 1, AAAAA, 2016-01-14 09:54:42.166, null, 2016-01-14 09:54:42.166, 1, null]
+Setting logged in user info for ADD
+Setting logged in user info for ADD
+[EL Fine]: sql: 2016-01-14 09:54:42.198--ClientSession(1374637311)--Connection(488201796)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Roles_T (roleId, RoleDescription, roleHelp, RoleIcon, RoleName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [D1726255-B9A2-455B-AB6D-605AE1B7081F, STevCVTCJb3J3Btk6iGO9r5Dbv6sSYzCh3j0cpXBSGr9Z6EjxK, ODgXpuGtCp2eBQMJKe9bPnTY4XbSeMed18nyyloMMg1FxGdsZM, A9d9C7yYlWzIjnmRfL4THfNnPIibLo39qyzTjL8MNe7H5r8Oln, 1UfU0Xev6R4Mu5F0FjHyJoRTi1Iq9P2bNOvKb8LBvggShiTcfy, 1, AAAAA, 2016-01-14 09:54:42.166, null, 2016-01-14 09:54:42.166, 1, null]
+[EL Fine]: sql: 2016-01-14 09:54:42.199--ClientSession(1374637311)--Connection(488201796)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_RoleMenuBridge_TP (roleMenuMapId, isExecute, isRead, isWrite, menuId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, roleId) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [B01B55AA-F92B-4A73-91ED-86714DCFE35A, true, true, true, 1148FB12-1F48-4E71-8C06-643D1B12ACBB, 1, AAAAA, 2016-01-14 09:54:42.166, null, 2016-01-14 09:54:42.166, 1, null, D1726255-B9A2-455B-AB6D-605AE1B7081F]
+[EL Fine]: sql: 2016-01-14 09:54:42.207--ClientSession(1382417381)--Connection(488201796)--Thread(Thread[Test worker,5,main])--SELECT roleId, RoleDescription, roleHelp, RoleIcon, RoleName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Roles_T WHERE ((activeStatus = ?) AND (roleId = ?))
+	bind => [1, D1726255-B9A2-455B-AB6D-605AE1B7081F]
+[EL Fine]: sql: 2016-01-14 09:54:42.208--ClientSession(1382417381)--Connection(488201796)--Thread(Thread[Test worker,5,main])--SELECT roleMenuMapId, isExecute, isRead, isWrite, menuId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, roleId FROM ast_RoleMenuBridge_TP WHERE (roleId = ?)
+	bind => [D1726255-B9A2-455B-AB6D-605AE1B7081F]
+Setting logged in user info for UPDATE
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-01-14 09:54:42.21--ClientSession(1709019856)--Connection(488201796)--Thread(Thread[Test worker,5,main])--SELECT roleId, RoleDescription, roleHelp, RoleIcon, RoleName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Roles_T WHERE (roleId = ?)
+	bind => [D1726255-B9A2-455B-AB6D-605AE1B7081F]
+[EL Fine]: sql: 2016-01-14 09:54:42.212--ClientSession(1709019856)--Connection(488201796)--Thread(Thread[Test worker,5,main])--SELECT roleMenuMapId, isExecute, isRead, isWrite, menuId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, roleId FROM ast_RoleMenuBridge_TP WHERE (roleId = ?)
+	bind => [D1726255-B9A2-455B-AB6D-605AE1B7081F]
+[EL Fine]: sql: 2016-01-14 09:54:42.213--ClientSession(1709019856)--Connection(488201796)--Thread(Thread[Test worker,5,main])--UPDATE ast_Roles_T SET RoleDescription = ?, roleHelp = ?, RoleIcon = ?, RoleName = ?, updatedBy = ?, versionId = ? WHERE ((roleId = ?) AND (versionId = ?))
+	bind => [g2Kxa91UgJtCbXlKlnYRkLo7p3cr33qv8S09xaToBh4kZh3agG, HJw0LwTiB6giP2Q9ZzCrpeouK6tXu2WnF5obGnFwOHkA56a4Z5, LipY7LYxt3OxoUpYbsJYAAnq4RFyoHdETPzn1Pxfc5FTWSF2ev, apI7fCxBXA2rILeYqMwK9ZjNLGutkcygw0Q6QAG1RaeXHkIDIQ, AAAAA, 2, D1726255-B9A2-455B-AB6D-605AE1B7081F, 1]
+[EL Fine]: sql: 2016-01-14 09:54:42.214--ClientSession(1709019856)--Connection(488201796)--Thread(Thread[Test worker,5,main])--UPDATE ast_RoleMenuBridge_TP SET updatedBy = ?, versionId = ? WHERE ((roleMenuMapId = ?) AND (versionId = ?))
+	bind => [AAAAA, 2, B01B55AA-F92B-4A73-91ED-86714DCFE35A, 1]
+[EL Fine]: sql: 2016-01-14 09:54:42.221--ClientSession(2021977976)--Connection(488201796)--Thread(Thread[Test worker,5,main])--SELECT roleId, RoleDescription, roleHelp, RoleIcon, RoleName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Roles_T WHERE ((activeStatus = ?) AND (roleId = ?))
+	bind => [1, D1726255-B9A2-455B-AB6D-605AE1B7081F]
+[EL Fine]: sql: 2016-01-14 09:54:42.222--ClientSession(2021977976)--Connection(488201796)--Thread(Thread[Test worker,5,main])--SELECT roleMenuMapId, isExecute, isRead, isWrite, menuId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, roleId FROM ast_RoleMenuBridge_TP WHERE (roleId = ?)
+	bind => [D1726255-B9A2-455B-AB6D-605AE1B7081F]
+[EL Fine]: sql: 2016-01-14 09:54:42.227--ClientSession(277222108)--Connection(488201796)--Thread(Thread[Test worker,5,main])--SELECT roleId, RoleDescription, roleHelp, RoleIcon, RoleName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Roles_T WHERE (roleId = ?)
+	bind => [D1726255-B9A2-455B-AB6D-605AE1B7081F]
+[EL Fine]: sql: 2016-01-14 09:54:42.227--ClientSession(277222108)--Connection(488201796)--Thread(Thread[Test worker,5,main])--SELECT roleMenuMapId, isExecute, isRead, isWrite, menuId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, roleId FROM ast_RoleMenuBridge_TP WHERE (roleId = ?)
+	bind => [D1726255-B9A2-455B-AB6D-605AE1B7081F]
+[EL Fine]: sql: 2016-01-14 09:54:42.229--ClientSession(277222108)--Connection(488201796)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_RoleMenuBridge_TP WHERE ((roleMenuMapId = ?) AND (versionId = ?))
+	bind => [B01B55AA-F92B-4A73-91ED-86714DCFE35A, 2]
+[EL Fine]: sql: 2016-01-14 09:54:42.23--ClientSession(277222108)--Connection(488201796)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Roles_T WHERE ((roleId = ?) AND (versionId = ?))
+	bind => [D1726255-B9A2-455B-AB6D-605AE1B7081F, 2]
+[EL Fine]: sql: 2016-01-14 09:54:42.236--ClientSession(1359085082)--Connection(488201796)--Thread(Thread[Test worker,5,main])--SELECT menuId, appId, appType, autoSave, menuAccessRights, menuAction, menuCommands, menuDisplay, menuHead, menuIcon, menuLabel, menuTreeId, RefObjectId, uiType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AppMenus_M WHERE (menuId = ?)
+	bind => [1148FB12-1F48-4E71-8C06-643D1B12ACBB]
+[EL Fine]: sql: 2016-01-14 09:54:42.238--ClientSession(1359085082)--Connection(488201796)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_AppMenus_M WHERE ((menuId = ?) AND (versionId = ?))
+	bind => [1148FB12-1F48-4E71-8C06-643D1B12ACBB, 1]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
